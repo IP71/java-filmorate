@@ -7,6 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.PastOrPresent;
 import java.time.LocalDate;
 
+// Класс, описывающий сущность "Пользователь"
 @Data
 public class User {
 

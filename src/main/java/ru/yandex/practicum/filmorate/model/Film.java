@@ -7,6 +7,7 @@ import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
+// Класс, описывающий сущность "Фильм"
 @Data
 public class Film {
 
@@ -19,4 +20,3 @@ public class Film {
     @Positive
     private final int duration;
 }
-
