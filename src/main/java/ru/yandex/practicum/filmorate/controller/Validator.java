@@ -7,11 +7,15 @@ import ru.yandex.practicum.filmorate.model.*;
 import java.time.LocalDate;
 import java.time.Month;
 
-// Служебный класс, выполняющий валидацию полученных экземпляров Film и User
+/*
+Служебный класс, выполняющий валидацию полученных экземпляров Film и User
+Метод validateFilm(Film film) выполняет валидацию экземпляра Film
+Метод validateUser(User user) выполняет валидацию экземпляра User
+*/
+
 @Slf4j
 public class Validator {
 
-    // Метод для валидации экземпляра Film
     public static void validateFilm(Film film) {
         if (film.getName() == null || film.getName().isBlank()) {
             log.error("Название фильма пустое");
@@ -31,7 +35,6 @@ public class Validator {
         }
     }
 
-    // Метод для валидации экземпляра User
     public static void validateUser(User user) {
         if (!user.getEmail().contains("@")) {
             log.error("Email пользователя пуст или не содержит @");
