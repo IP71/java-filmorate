@@ -28,7 +28,7 @@ class FilmorateApplicationTests {
 
     @DisplayName("Действия с пользователями")
     @Test
-    public void InteractionWithUsersTest() {
+    public void interactWithUsersTest() {
         User user1 = new User("email1@com", "login1", "name1",
                 LocalDate.of(2000, 1, 1), new HashSet<>());
         userStorage.create(user1);
@@ -49,7 +49,7 @@ class FilmorateApplicationTests {
 
     @DisplayName("Действия с фильмами")
     @Test
-    public void InteractionWithFilmsTest() {
+    public void interactWithFilmsTest() {
         Film film1 = new Film("name1", "description1", LocalDate.of(2000, 1, 1),
                 100, new HashSet<>(), new Mpa(1, "G"), new HashSet<>());
         filmStorage.create(film1);
